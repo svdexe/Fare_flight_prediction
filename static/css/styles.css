@@ -1,10 +1,16 @@
+.vidyalankar{
+    z-index: 1000;
+}
 body {
-    background-color: #e1f4f3;
+    background-image: linear-gradient(#FF69B4,#00FFFF);
     text-align: center;
 }
 
+
+
 .navbar {
     background-color: #333333;
+    /* background-image: linear-gradient(white,#333333); */
 }
 
 a {
@@ -14,3 +20,26 @@ a {
 a:hover {
     color: #f0f0f0;
   }
+
+/* .vit-logo{
+      float:left;
+  } */
+
+.vit-logo{
+    float:right;
+    position: relative;
+    left: 1345px;
+    }
+
+.footer{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* .title{
+    font-size: larger;
+} */
+
+/* .button{
+    font-size: 20px;
+} */
