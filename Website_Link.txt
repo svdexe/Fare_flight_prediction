@@ -1,1 +1,3 @@
+https://flight-fare-predictor-0.herokuapp.com/
+
 https://flight-fare-predictor-00.herokuapp.com/

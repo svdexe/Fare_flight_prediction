@@ -4,8 +4,10 @@ import sklearn
 import pickle
 import pandas as pd
 
+import joblib
+
 app = Flask(__name__)
-model = pickle.load(open("flight_rf.pkl", "rb"))
+model = joblib.load("flight_rf.joblib")  # Match the filename
 
 
 
