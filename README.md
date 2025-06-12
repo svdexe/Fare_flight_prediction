@@ -1,69 +1,90 @@
-# Flight Fare Prediction: 
+# ✈️ Flight Price Predictor
 
-## Table of Content
-  * [Demo](#demo)
-  * [Overview](#overview)
-  * [Motivation](#motivation)
-  * [Installation](#installation)
-  * [Deployement on Heroku](#deployement-on-heroku)
-  * [Directory Tree](#directory-tree)
-  * [Bug / Feature Request](#bug---feature-request)
-  * [Future scope of project](#future-scope)
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/Flask-Web%20App-green.svg" alt="Flask">
+  <img src="https://img.shields.io/badge/ML-Random%20Forest-orange.svg" alt="ML">
+</div>
 
+<p align="center">
+  <em>AI-powered flight price prediction using machine learning</em>
+</p>
 
-## Demo
-Link: [https://flight-price-prediction-api.herokuapp.com/](https://flight-price-prediction-api.herokuapp.com/)
+## 📸 Demo
 
-[![](https://i.imgur.com/R1g2wvC.png)](https://flight-price-prediction-api.herokuapp.com/)
+<div align="center">
+  <img src="https://github.com/svdexe/Fare_flight_prediction/blob/main/Website%20output.png" alt="Flight Price Predictor Demo" width="800">
+</div>
 
-[![](https://i.imgur.com/p0aeL6c.png)](https://flight-price-prediction-api.herokuapp.com/)
+---
 
-## Overview
-This is a Flask web app which predicts fare of Flight ticket.
+## 🎯 Overview
 
-## Motivation
-What to do when you are at home due to this pandemic situation? I started to learn Machine Learning model to get most out of it. I came to know mathematics behind all supervised models. Finally it is important to work on application (real world application) to actually make a difference.
+A machine learning web application that predicts flight prices using Random Forest algorithm. Built with Flask and deployed as an interactive web interface.
 
-## Installation
-The Code is written in Python 3.6.10. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
+## ✨ Features
+
+- **Random Forest ML Model** - 81% accuracy with hyperparameter tuning
+- **Interactive Web App** - Clean UI with real-time predictions
+- **Multiple Airlines** - IndiGo, Air India, Jet Airways, SpiceJet, etc.
+- **Major Routes** - Covers all major Indian cities
+- **Instant Results** - Real-time price estimation
+
+## 🧠 Algorithm
+
+**Random Forest Regressor**
+- **Accuracy**: 81% R² Score
+- **RMSE**: 2090.55
+- **Features**: 29 engineered features
+- **Training Data**: 10,000+ flight records
+
+### Key Features
+- **Temporal**: Journey date, departure/arrival times
+- **Categorical**: Airlines, source/destination cities  
+- **Flight Details**: Stops, duration (hours/minutes)
+- **Preprocessing**: One-hot encoding, label encoding
+
+## 📊 Performance
+
+| Metric | Score |
+|--------|-------|
+| R² Score | 0.81 |
+| RMSE | 2090.55 |
+| MAE | 1297.42 |
+| Training Accuracy | 95% |
+
+## 🚀 Quick Start
+
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/svdexe/Fare_flight_prediction.git
+cd Fare_flight_prediction
+pip install flask pandas numpy scikit-learn joblib
+python app.py
 ```
 
-## Deployement on Heroku
-Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
+Open `http://localhost:5000` in your browser.
 
-[![](https://i.imgur.com/dKmlpqX.png)](https://heroku.com)
+## 🎮 Usage
 
-Our next step would be to follow the instruction given on [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python) to deploy a web app.
+1. Select departure/arrival dates
+2. Choose source and destination
+3. Pick airline and stops
+4. Get instant price prediction
 
-## Directory Tree 
-```
-├── static 
-│   ├── css
-├── template
-│   ├── home.html
-├── Procfile
-├── README.md
-├── app.py
-├── flight_price.ipynb
-├── flight_rf.pkl
-├── requirements.txt
-```
+## 🔧 Tech Stack
 
-## Technologies Used
+- **Backend**: Python, Flask
+- **ML**: Scikit-learn, Random Forest
+- **Data**: Pandas, NumPy
+- **Frontend**: HTML, CSS, JavaScript
 
-![](https://forthebadge.com/images/badges/made-with-python.svg)
+## 👨‍💻 Author
 
-[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) [<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/stable/) 
+**svdexe**
+- GitHub: [@svdexe](https://github.com/svdexe)
 
+---
 
-## Bug / Feature Request
-
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an [issue](https://github.com/Mandal-21/Flight-Price-Prediction/issues) here by including your search query and the expected result
-
-## Future Scope
-
-* Use multiple Algorithms
-* Optimize Flask app.py
-* Front-End 
+<div align="center">
+  <p>⭐ Star this repository if you found it helpful!</p>
+</div>
