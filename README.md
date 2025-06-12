@@ -1,5 +1,11 @@
 # ✈️ Flight Price Predictor
 
+## 📸 Demo
+
+<div align="center">
+  <img src="https://github.com/svdexe/Fare_flight_prediction/blob/main/Website%20output.png" alt="Flight Price Predictor Demo" width="800">
+</div>
+
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python">
   <img src="https://img.shields.io/badge/Flask-Web%20App-green.svg" alt="Flask">
@@ -10,11 +16,7 @@
   <em>AI-powered flight price prediction using machine learning</em>
 </p>
 
-## 📸 Demo
 
-<div align="center">
-  <img src="https://github.com/svdexe/Fare_flight_prediction/blob/main/Website%20output.png" alt="Flight Price Predictor Demo" width="800">
-</div>
 
 ---
 
